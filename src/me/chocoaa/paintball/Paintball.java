@@ -10,12 +10,14 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Paintball extends JavaPlugin {
 
     public void onEnable() {
+
         SettingsManager.getInstance().setup(this);
+
         ArenaManager.getInstance().setup();
 
         CommandManager cm = new CommandManager();
         cm.setup();
-        getCommand("pogoball").setExecutor(cm);
+        getCommand("paintball").setExecutor(cm);
 
         Bukkit.getServer().getPluginManager().registerEvents(new ArmorRemove(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new BlockBreak(), this );
