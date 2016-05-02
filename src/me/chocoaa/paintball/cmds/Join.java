@@ -38,8 +38,8 @@ public class Join extends SubCommand {
 
         if (a.isStarted()) {
             MessageManager.getInstance().severe(p, "Arena " + id + " has already started!");
+            return;
         }
-        return;
 
 
         a.addPlayer(p);
