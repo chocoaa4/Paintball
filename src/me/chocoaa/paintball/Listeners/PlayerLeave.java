@@ -7,7 +7,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 /**
- * Created by AhmedAbdulai on 01/05/2016.
+ * Created by Chocoaa on 01/05/2016.
  */
 public class PlayerLeave implements Listener {
 
@@ -15,6 +15,6 @@ public class PlayerLeave implements Listener {
     public void onPlayerQuit(PlayerQuitEvent e) {
         Arena a = ArenaManager.getInstance().getArena(e.getPlayer());
         if (a == null) return;
-        a.removePlayer(e.getPlayer());
+        a.removePlayer(e.getPlayer(), false);
     }
 }
