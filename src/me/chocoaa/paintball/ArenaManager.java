@@ -25,9 +25,12 @@ public class ArenaManager {
 
     public void setup() {
         // load config
-        for (int i : SettingsManager.getInstance().<List<Integer>>get("ids")) {
-            arenas.add(new Arena(i));
+        try {
+            for (int i : SettingsManager.getInstance().<List<Integer>>get("ids")) {
+                arenas.add(new Arena(i));
+            }
         }
+        catch (Exception ignored) { }
     }
 
     public ArrayList<Arena> getArenas() {
