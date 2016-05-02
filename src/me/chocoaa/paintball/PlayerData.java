@@ -6,7 +6,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scoreboard.Team;
 
 /**
- * Created by AhmedAbdulai on 01/05/2016.
+ * Created by Chocoaa on 01/05/2016.
  */
 public class PlayerData {
 
