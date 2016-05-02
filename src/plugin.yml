@@ -1,0 +1,11 @@
+name: Paintball
+version: 1.0
+main: me.chocoaa.paintball.Paintball
+author: chocoaa
+description: A fully functional paintball plugin!
+
+commands:
+     paintball:
+        usage: /<command> <args> [optional args]
+        aliases: [pb]
+        description: Paintball Command
