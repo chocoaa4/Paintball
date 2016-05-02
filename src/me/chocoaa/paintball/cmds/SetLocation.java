@@ -8,7 +8,7 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 
 /**
- * Created by AhmedAbdulai on 30/04/2016.
+ * Created by Chocoaa on 30/04/2016.
  */
 public class SetLocation extends SubCommand {
     @Override
