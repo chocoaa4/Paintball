@@ -19,7 +19,7 @@ public class Leave extends SubCommand {
             return;
         }
 
-        a.removePlayer(p);
+        a.removePlayer(p,false);
 
     }
 
