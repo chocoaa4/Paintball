@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 
 /**
- * Created by AhmedAbdulai on 30/04/2016.
+ * Created by Chocoaa on 30/04/2016.
  */
 public class SettingsManager {
 
