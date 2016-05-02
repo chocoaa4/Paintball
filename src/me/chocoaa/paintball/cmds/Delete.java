@@ -7,7 +7,7 @@ import me.chocoaa.paintball.SettingsManager;
 import org.bukkit.entity.Player;
 
 /**
- * Created by AhmedAbdulai on 30/04/2016.
+ * Created by Chocoaa on 30/04/2016.
  */
 public class Delete extends SubCommand {
     @Override
