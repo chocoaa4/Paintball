@@ -19,7 +19,7 @@ public class Delete extends SubCommand {
         int id = 10;
         // any number
 
-        try { id = Integer.parseInt(args[0]; }
+        try { id = Integer.parseInt(args[0]); }
         catch (Exception e) {
             MessageManager.getInstance().severe(p, args[0] + " is not a valid number!");
             return;
