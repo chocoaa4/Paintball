@@ -6,7 +6,7 @@ import me.chocoaa.paintball.MessageManager;
 import org.bukkit.entity.Player;
 
 /**
- * Created by AhmedAbdulai on 27/04/2016.
+ * Created by Chocoaa on 27/04/2016.
  */
 public class Join extends SubCommand {
 
