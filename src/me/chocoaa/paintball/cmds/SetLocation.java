@@ -2,6 +2,7 @@ package me.chocoaa.paintball.cmds;
 
 import me.chocoaa.paintball.Arena;
 import me.chocoaa.paintball.ArenaManager;
+import me.chocoaa.paintball.ArenaManager.Team;
 import me.chocoaa.paintball.MessageManager;
 import me.chocoaa.paintball.SettingsManager;
 import org.bukkit.configuration.ConfigurationSection;
@@ -22,7 +23,7 @@ public class SetLocation extends SubCommand {
         int id = 10;
         // any number
 
-        try { id = Integer.parseInt(args[0]; }
+        try { id = Integer.parseInt(args[0]); }
         catch (Exception e) {
             MessageManager.getInstance().severe(p, args[0] + " is not a valid number!");
             return;
@@ -34,13 +35,10 @@ public class SetLocation extends SubCommand {
             return;
         }
 
-        if (a.isStarted()) {
-            MessageManager.getInstance().severe(p, "Arena " + id + " has already started!");
-        }
-        return;
 
-        ArenaManager.Team team = null;
-        try { team = ArenaManager.Team.valueOf(args [1]); }
+        Team team = null;
+
+        try { team = Team.valueOf(args [1]); }
         catch
                 (Exception e) {
             MessageManager.getInstance().severe(p, args[1] + " is not a valid team!");
