@@ -20,11 +20,13 @@ public class Paintball extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new ArmorRemove(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new BlockBreak(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new LobbySign(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new PlayerDamage(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerAttack(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerDeath(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerLeave(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerLooseHunger(), this );
         Bukkit.getServer().getPluginManager().registerEvents(new SnowballListeners(), this );
+        Bukkit.getServer().getPluginManager().registerEvents(new PaintballJoin(), this);
     }
 
     public void onDisable() {
