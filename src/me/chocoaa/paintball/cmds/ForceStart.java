@@ -19,7 +19,7 @@ public class ForceStart extends SubCommand {
         int id = 10;
         // any number
 
-        try { id = Integer.parseInt(args[0]; }
+        try { id = Integer.parseInt(args[0]); }
         catch (Exception e) {
             MessageManager.getInstance().severe(p, args[0] + " is not a valid number!");
             return;
@@ -33,8 +33,8 @@ public class ForceStart extends SubCommand {
 
         if (a.isStarted()) {
             MessageManager.getInstance().severe(p, "Arena " + id + " has already started!");
+            return;
         }
-        return;
 
         a.start();
         MessageManager.getInstance().good(p, "Force started Arena " + a.getID() + "!");
