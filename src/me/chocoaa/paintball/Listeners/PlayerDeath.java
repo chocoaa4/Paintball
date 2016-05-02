@@ -14,7 +14,7 @@ public class PlayerDeath implements Listener {
     public void onPlayerDeath(PlayerDeathEvent e) {
         if (ArenaManager.getInstance().getArena(e.getEntity()) == null)
             ArenaManager.getInstance().getArena(e.getEntity()).addDeath(e.getEntity());
-            ArenaManager.getInstance().getArena(e.getEntity()).removePlayer(e.getEntity());
+            ArenaManager.getInstance().getArena(e.getEntity()).removePlayer(e.getEntity(),true);
 
     }
 }
