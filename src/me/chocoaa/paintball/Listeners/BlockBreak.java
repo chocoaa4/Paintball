@@ -6,7 +6,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 
 /**
- * Created by AhmedAbdulai on 01/05/2016.
+ * Created by Chocoaa on 01/05/2016.
  */
 public class BlockBreak implements Listener {
 
