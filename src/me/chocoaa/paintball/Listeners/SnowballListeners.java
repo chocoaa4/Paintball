@@ -54,7 +54,7 @@ public class SnowballListeners implements Listener {
 
     @EventHandler
     public void onPlayerRegen(EntityRegainHealthEvent e) {
-        if (e.getEntity() instance of Player) {
+        if (e.getEntity() instanceof Player) {
             Player p = (Player) e.getEntity();
             if (ArenaManager.getInstance().getArena(p) == null )
                 return;
