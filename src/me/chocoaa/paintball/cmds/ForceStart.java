@@ -6,7 +6,7 @@ import me.chocoaa.paintball.MessageManager;
 import org.bukkit.entity.Player;
 
 /**
- * Created by AhmedAbdulai on 01/05/2016.
+ * Created by Chocoaa on 01/05/2016.
  */
 public class ForceStart extends SubCommand {
     @Override
